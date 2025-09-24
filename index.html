@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasti Shayganfard | UX Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero-section {
+            background:"background.jpg" no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 1.5rem;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            background-color: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 2.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #4f46e5;
+            text-align: center;
+            width: 100%;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #4f46e5;
+            border-radius: 9999px;
+        }
+        .skill-badge {
+            background-color: #e5e7eb;
+            color: #4b5563;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .skill-badge:hover {
+            background-color: #d1d5db;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header & Hero Section -->
+    <header class="mb-12">
+        <div class="hero-section">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 animate-fade-in-up">Hasti Shayganfard</h1>
+            <p class="text-xl md:text-2xl font-light mb-8">UX Designer | Universal Design of ICT</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#about" class="bg-white text-gray-800 font-semibold py-3 px-6 rounded-full transition-transform transform hover:scale-105">About Me</a>
+                <a href="#projects" class="bg-white text-gray-800 font-semibold py-3 px-6 rounded-full transition-transform transform hover:scale-105">View My Work</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Site Map / Table of Contents -->
+        <section id="sitemap" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mb-12">
+            <a href="#about" class="card text-center text-indigo-600 font-medium hover:bg-gray-50 transition-colors">About</a>
+            <a href="#education" class="card text-center text-indigo-600 font-medium hover:bg-gray-50 transition-colors">Education</a>
+            <a href="#projects" class="card text-center text-indigo-600 font-medium hover:bg-gray-50 transition-colors">Thesis Project</a>
+            <a href="#skills" class="card text-center text-indigo-600 font-medium hover:bg-gray-50 transition-colors">Skills</a>
+            <a href="#contact" class="card text-center text-indigo-600 font-medium hover:bg-gray-50 transition-colors">Contact</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="card mb-12">
+            <h2 class="section-title">About Me</h2>
+            <p class="text-lg leading-relaxed text-gray-600 text-center">
+                A recent graduate with a Master's in Universal Design of ICT, I possess a strong foundation in inclusive design and digital accessibility. My academic work has provided me with hands-on experience in UX research, prototyping, and data analysis. I am passionate about creating user-centered ICT solutions that are accessible to everyone, and I am eager to apply my expertise in an internship where I can contribute to meaningful projects.
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="card mb-12">
+            <h2 class="section-title">Education</h2>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900">Master of Science in Universal Design of ICT</h3>
+                    <p class="font-medium text-gray-700">Oslo Metropolitan University (OsloMet), Norway - 2025</p>
+                    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-600">
+                        <li>Master's thesis: "A usability and universal design investigation into carousel interaction in mobile context"</li>
+                        <li>Relevant Coursework: User Diversity and ICT Barriers, Universal Design of Interactive Systems, Interaction Styles and Technologies for Accessibility, Intelligent User Interfaces.</li>
+                        <li>Tools used: Figma (UI/UX design), SPSS (data analysis)</li>
+                    </ul>
+                </div>
+                <div class="border-t border-gray-200 pt-8">
+                    <h3 class="text-xl font-semibold text-gray-900">Bachelor's degree in Information Technology (IT)</h3>
+                    <p class="font-medium text-gray-700">QIAU, Iran - 2018</p>
+                    <p class="mt-2 text-gray-600">Final Project: Designed and developed an online shopping website, gaining familiarity with HTML and CSS for front-end implementation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thesis Project Section -->
+        <section id="projects" class="card mb-12">
+            <h2 class="section-title">Master's Thesis Project</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Project Overview: A Usability and Universal Design Investigation into Carousel Interaction in Mobile Contexts</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        My master's thesis investigated the impact of carousel elements on user experience in a mobile shopping context. The goal was to determine if carousels, a popular design feature for saving space, truly improve usability and user satisfaction. To explore this, I designed and tested two versions of a mobile shopping app: one with carousels and one without.
+                    </p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-xl">
+                    <img src="Picture1.jpg" alt="A visual mockup of the mobile app prototype showing a carousel." class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-center mb-8">
+                <div class="md:order-last">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Methodology: Design, Prototyping, and User Testing</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        I created two interactive mobile prototypes in Figma, both simulating a mobile clothing store with identical content and a shared visual identity. The design was tailored to a set of 5 specific shopping-related tasks the participants would be asked to complete. I conducted a within-subjects usability test with 30 participants, who completed these tasks on both prototypes. During the tests, I collected quantitative data on task duration and error count, along with qualitative data from user satisfaction ratings and a follow-up interview with a participant with a physical disability.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-4">
+                        <a href="https://www.figma.com/proto/xD92LuVCSkDUfvNp3C28wk/Onlineshop-Project?node-id=288-11364&starting-point-node-id=353%3A3911&t=iYA03AVn8uBaryLd-1" class="inline-block bg-indigo-600 text-white text-sm px-6 py-3 rounded-full hover:bg-indigo-700 transition duration-300 font-semibold text-center">
+                            View With Carousel Prototype
+                        </a>
+                        <a href="https://www.figma.com/proto/xD92LuVCSkDUfvNp3C28wk/Onlineshop-Project?node-id=7-5572&starting-point-node-id=7%3A5572&t=b6heZtzZEBRloAVq-1" class="inline-block bg-indigo-600 text-white text-sm px-6 py-3 rounded-full hover:bg-indigo-700 transition duration-300 font-semibold text-center">
+                            View Without Carousel Prototype
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-xl">
+                    <img src="User testing element.jpg" alt="A diagram showing the user flow for the app's tasks." class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Key Findings & Analysis</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        The results consistently showed that the non-carousel version of the app was more effective. Participants completed tasks faster, made significantly fewer errors, and reported a higher overall satisfaction with the vertical layout. The carousel version introduced cognitive load and navigational friction, leading to a poorer user experience. This suggests that for goal-oriented tasks like shopping, simpler, more direct layouts are more intuitive and user-friendly. The interview with the disabled participant, who had muscular dystrophy, provided a nuanced perspective, revealing that while he found horizontal swipes physically less demanding, the small navigation controls and auto-rotating nature of the carousels were still a significant barrier to usability and control.
+                    </p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-xl">
+                    <img src="analys.jpg" alt="A chart or graphic summarizing the key findings from the usability test." class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="card mb-12">
+            <h2 class="section-title">Skills</h2>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <span class="skill-badge">Universal Design Principles</span>
+                <span class="skill-badge">UX/UI Design</span>
+                <span class="skill-badge">Figma Prototyping</span>
+                <span class="skill-badge">User Research & Testing</span>
+                <span class="skill-badge">Qualitative & Quantitative Data Analysis</span>
+                <span class="skill-badge">SPSS Statistical Analysis</span>
+                <span class="skill-badge">IT & Web Development (HTML/CSS)</span>
+                <span class="skill-badge">Problem-Solving</span>
+                <span class="skill-badge">Team Collaboration</span>
+                <span class="skill-badge">Fluent in English</span>
+                <span class="skill-badge">Intermediate Norwegian</span>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="card">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+                <p class="text-lg text-gray-600 max-w-lg text-center md:text-left">
+                    I am actively seeking an internship to apply my skills in Universal Design. Feel free to reach out to discuss potential opportunities!
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="mailto:Hasti.shaygan74@gmail.com" class="bg-indigo-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-indigo-700 transition-colors duration-300 shadow-md">Email Me</a>
+                    <a href="https://www.linkedin.com/in/hasti-shayganfard-684274375/?trk=public-profile-join-page" class="bg-gray-800 text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-900 transition-colors duration-300 shadow-md">LinkedIn Profile</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6 mt-12 text-center text-gray-500 text-sm">
+        <div class="container">
+            <p>&copy; 2024 Hasti Shayganfard. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
